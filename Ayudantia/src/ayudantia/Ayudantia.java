@@ -1,6 +1,5 @@
 package ayudantia;
 
-import java.util.ArrayList;
 
 public class Ayudantia {
 
@@ -8,15 +7,8 @@ public class Ayudantia {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        AutoClass auto1 = new AutoClass(4, "AMG", "MERCEDEZ", "313113-K", 300);
-        System.out.println(auto1.getNumRuedas());
-        auto1.setNumRuedas(6);
-        System.out.println(auto1.getNumRuedas());
+        AutoClass auto1 = new AutoClass("X", "3113", 4, 210, 4);
         
-        ArrayList<AutoClass> listaAutos = new ArrayList<AutoClass>();
-        
-        ArrayList<Integer> a = auto1.hola();
-        System.out.println(a.get(0));
-        System.out.println(a.get(1));
+        Moto moto1 = new Moto("B", "dsada", 2, 300, 1);
     }
 }
